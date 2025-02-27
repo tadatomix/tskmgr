@@ -36,7 +36,6 @@ def task_reading ():
         for row in csvreader:
             i+=1
             counter = str(i) + "."
-            
             if len(counter) > len(rowLabels[0]):
                 while (len(rowLabels[0]) != len(counter)):
                     counter_label+=" "
