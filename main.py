@@ -35,7 +35,6 @@ def task_reading ():
         state_label = rowLabels[3]
         for row in csvreader:
             i+=1
-            strLen=0
             counter = str(i) + "."
             
             if len(counter) > len(rowLabels[0]):
