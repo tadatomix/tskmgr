@@ -33,7 +33,7 @@ def task_reading ():
         print (rowLabels[0] + "|" + rowLabels[1] + "|" + rowLabels[2] + "|" + rowLabels[3] + "|" + rowLabels[4])
         for row in csvreader:
             i+=1
-            l=0
+            strLen=0
             text += str(i) + "." + " | "
             nonfText += str(i) + "." + " | "
             if (row[3] == "True"):
@@ -59,9 +59,9 @@ def task_reading ():
                 nonfText += row[1] + " | "
             text += row[2] + " | "
             nonfText += row[2] + " | "
-            while (l < len(nonfText)):
+            while (strLen < len(nonfText)):
                 print('-', end='')
-                l+=1
+                strLen+=1
             print('')
             print(text)
             text = ""
